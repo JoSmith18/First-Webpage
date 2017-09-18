@@ -45,3 +45,12 @@ img {
 .container > div.jumbotron {
     border-radius: 0px;
 }
+.title {
+    font: bold;
+    font-size: 150%;
+    color: darkgreen;
+}
+
+.portfolio-img {
+    height: 350px;
+}
