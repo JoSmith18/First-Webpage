@@ -24,7 +24,7 @@ p,
 ul,
 ol,
 li {
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 img {
@@ -46,11 +46,22 @@ img {
     border-radius: 0px;
 }
 .title {
-    font: bold;
+    font: bolder;
     font-size: 150%;
     color: darkgreen;
+    display: block;
 }
 
 .portfolio-img {
     height: 350px;
+}
+
+.contact-item {
+    font-size: 1.3em;
+    margin-left: 8px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
