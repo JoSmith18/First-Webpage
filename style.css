@@ -70,3 +70,7 @@ img {
 .copyright {
     text-align: right;
 }
+
+.nav-pills {
+    padding: 14px;
+}
