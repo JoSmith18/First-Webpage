@@ -82,3 +82,17 @@ img {
     border: 2px solid rgba(226, 161, 177, 1);
     border-radius: 7px;
 }
+
+.project-button {
+    padding: 14px;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid rgba(226, 161, 177, 1);
+    border-radius: 7px;
+    width: 100%;
+    min-height: 10vh;
+}
+
+.notSelected {
+    background-color: burlywood;
+}
