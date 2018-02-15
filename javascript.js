@@ -1,4 +1,14 @@
 PROJECTDATA = {
+    Java_GasPump: {
+        title: 'February: Java Gas Pump Application',
+        url: 'https://github.com/JoSmith18/Java-GasPump',
+        gameurl:
+            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/gaspump.mp4',
+        details:
+            'This was a recreation of the gas pump application in Python. I made it in Java and then added a GUI to go along with it using Java Swing.',
+        imgurl:
+            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/Screenshot from 2018-02-05 15-37-36.png'
+    },
     Ajax: {
         title: 'November: AJAX Front-End',
         url: 'https://github.com/JoSmith18/AJAX-Chirper-Frontend',
@@ -44,7 +54,7 @@ PROJECTDATA = {
         imgurl: 'photos/Screenshot from 2017-09-29 13-18-02.png'
     },
     Knowledge: {
-        title: 'September: Movie and Music Knowledge Tester',
+        title: 'September: Python Knowledge Tester',
         url: 'https://github.com/JoSmith18/Movie_and_Music_Knowledge',
         details:
             'For this application I used <abbr title="Object-Oriented-Programming">OOP</abbr> and python to create a terminal based game that gives the user a song or movie and ask for either the artist or actor.',
@@ -113,17 +123,31 @@ function loadProjectData(key) {
 
 function loadButtons() {
     var keys = Object.keys(PROJECTDATA);
-    var buttons = keys.map(function(key) {
-        return (
+    // var buttons = keys.map(function(key) {
+    //     return (
+    //         '<div class="col-lg-4"><button class="notSelected project-button" id="' +
+    //         key +
+    //         '">' +
+    //         PROJECTDATA[key].title +
+    //         '</button></div>'
+    //     );
+    // });
+    var buttons = '<div class="row">';
+    for (var c = 0; c < keys.length; c++) {
+        if (c > 0 && c % 3 == 0) {
+            buttons += '</div><div class="row">';
+        }
+        buttons +=
             '<div class="col-lg-4"><button class="notSelected project-button" id="' +
-            key +
+            keys[c] +
             '">' +
-            PROJECTDATA[key].title +
-            '</button></div>'
-        );
-    });
+            PROJECTDATA[keys[c]].title +
+            '</button></div>';
+    }
+    buttons += '</div>';
 
-    $('#all-project-buttons').html(buttons.join(''));
+    // $('#all-project-buttons').html(buttons.join(''));
+    $('#all-project-buttons').html(buttons);
 }
 
 function main() {
@@ -137,7 +161,18 @@ function main() {
         loadProjectData(id);
     });
 
-    loadProjectData('Ajax');
+    loadProjectData('Java_GasPump');
+
+    var buttons = $('.project-button');
+    var height = 0;
+    for (var c = 0; c < buttons.length; c++) {
+        height = Math.max(height, $(buttons[c]).css('height'));
+        console.log($(buttons[c]).css('height'));
+    }
+
+    for (var c = 0; c < buttons.length; c++) {
+        $(buttons[c]).css('min-height', height);
+    }
 }
 
 $(main);

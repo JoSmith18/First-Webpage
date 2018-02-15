@@ -91,6 +91,7 @@ img {
     border-radius: 7px;
     width: 100%;
     min-height: 10vh;
+    font-size: 12px;
 }
 
 .notSelected {
