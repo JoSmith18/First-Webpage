@@ -2,8 +2,7 @@ PROJECTDATA = {
     PythonSigninDB: {
         title: 'February: Python and SQL Student Sign-In',
         url: 'https://github.com/JoSmith18/Raw-SQL-Student-Checkin',
-        gameurl:
-            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/studentcheckin2-2018-02-15_10.16.43.mp4',
+        gameurl: 'https://www.youtube.com/embed/wEKLBpX48dM',
         details:
             'This is an updated version of the earlier application did in July. For this application I used Python and the library Records to add features so an instructor has ways to change the Database, which was being used to keep track of students and sign in times.',
         imgurl:
