@@ -117,6 +117,7 @@ PROJECTDATA = {
 function loadProjectData(key) {
     var v = PROJECTDATA[key];
     var id = '#' + key;
+    $('#projects').hide(150);
     $(id)
         .removeClass('notSelected')
         .addClass('btn-success');
@@ -125,6 +126,7 @@ function loadProjectData(key) {
     $('#project-url').attr('href', v.url);
     $('#project-pic').attr('src', v.imgurl);
     $('#gameurl').attr('href', v.gameurl);
+    $('#projects').show(450);
 }
 
 function loadButtons() {
