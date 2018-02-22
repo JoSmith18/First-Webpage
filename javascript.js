@@ -176,7 +176,6 @@ function main() {
     var height = 0;
     for (var c = 0; c < buttons.length; c++) {
         height = Math.max(height, $(buttons[c]).css('height'));
-        console.log($(buttons[c]).css('height'));
     }
 
     for (var c = 0; c < buttons.length; c++) {
