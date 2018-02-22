@@ -5,18 +5,15 @@ PROJECTDATA = {
         gameurl: 'https://www.youtube.com/embed/wEKLBpX48dM',
         details:
             'This is an updated version of the earlier application did in July. For this application I used Python and the library Records to add features so an instructor has ways to change the Database, which was being used to keep track of students and sign in times.',
-        imgurl:
-            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/Screenshot from 2018-02-15 10-20-13.png'
+        imgurl: 'photos/Screenshot from 2018-02-15 10-20-13.png'
     },
     Java_GasPump: {
         title: 'February: Java Gas Pump Application',
         url: 'https://github.com/JoSmith18/Java-GasPump',
-        gameurl:
-            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/gaspump.mp4',
+        gameurl: 'photos/gaspump.mp4',
         details:
             'This was a recreation of the gas pump application in Python. I made it in Java and then added a GUI to go along with it using Java Swing.',
-        imgurl:
-            '/home/basecamp/Documents/DailyExercises/September/DailyPrac/September13th/photos/Screenshot from 2018-02-05 15-37-36.png'
+        imgurl: 'photos/Screenshot from 2018-02-05 15-37-36.png'
     },
     Ajax: {
         title: 'November: AJAX Front-End',
