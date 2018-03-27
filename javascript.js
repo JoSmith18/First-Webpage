@@ -125,7 +125,12 @@ function loadProjectData(key) {
     $('#project-details').html(v.details);
     $('#project-url').attr('href', v.url);
     $('#project-pic').attr('src', v.imgurl);
-    $('#gameurl').attr('href', v.gameurl);
+    if (v.hasOwnProperty('gameurl')) {
+        $('#gameurl').attr('href', v.gameurl);
+    } else {
+        $('#gameurl').attr('href', v.imgurl);
+    }
+
     $('#projects').show(450);
 }
 
