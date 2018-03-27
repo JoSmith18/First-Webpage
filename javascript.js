@@ -131,15 +131,6 @@ function loadProjectData(key) {
 
 function loadButtons() {
     var keys = Object.keys(PROJECTDATA);
-    // var buttons = keys.map(function(key) {
-    //     return (
-    //         '<div class="col-lg-4"><button class="notSelected project-button" id="' +
-    //         key +
-    //         '">' +
-    //         PROJECTDATA[key].title +
-    //         '</button></div>'
-    //     );
-    // });
     var buttons = '<div class="row">';
     for (var c = 0; c < keys.length; c++) {
         if (c > 0 && c % 3 == 0) {
@@ -154,13 +145,11 @@ function loadButtons() {
     }
     buttons += '</div>';
 
-    // $('#all-project-buttons').html(buttons.join(''));
     $('#all-project-buttons').html(buttons);
 }
 
 function main() {
     loadButtons();
-
     $('.project-button').on('click', function() {
         var id = $(this).attr('id');
         $('.project-button')
@@ -168,9 +157,7 @@ function main() {
             .addClass('notSelected');
         loadProjectData(id);
     });
-
     loadProjectData('PythonSigninDB');
-
     var buttons = $('.project-button');
     var height = 0;
     for (var c = 0; c < buttons.length; c++) {
